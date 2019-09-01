@@ -1,0 +1,206 @@
+
+lib/axisbox.cpp : \
+    lib/axisbox.h \
+    lib/rvbasetypes.h \
+    lib/vector.h \
+
+
+lib/box.cpp : \
+    lib/axisbox.h \
+    lib/box.h \
+    lib/matrix3.h \
+    lib/print.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/vector.h \
+    lib/vertex.h \
+
+
+lib/collapsedmesh.cpp : \
+    lib/axisbox.h \
+    lib/collapsedmesh.h \
+    lib/lookup.h \
+    lib/matrix3.h \
+    lib/mesh.h \
+    lib/polygon.h \
+    lib/polymod.h \
+    lib/print.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/surface.h \
+    lib/vector.h \
+    lib/vertex.h \
+
+
+lib/helpfunc.cpp : \
+    lib/helpfunc.h \
+    lib/print.h \
+
+
+lib/lookup.cpp : \
+    lib/axisbox.h \
+    lib/lookup.h \
+    lib/matrix3.h \
+    lib/print.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/vector.h \
+    lib/vertex.h \
+
+
+lib/matrix3.cpp : \
+    lib/matrix3.h \
+    lib/print.h \
+    lib/rvbasetypes.h \
+    lib/vector.h \
+
+
+lib/mesh.cpp : \
+    lib/axisbox.h \
+    lib/lookup.h \
+    lib/matrix3.h \
+    lib/mesh.h \
+    lib/polygon.h \
+    lib/polymod.h \
+    lib/print.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/surface.h \
+    lib/vector.h \
+    lib/vertex.h \
+
+
+lib/ncpwriter.cpp : \
+    lib/axisbox.h \
+    lib/lookup.h \
+    lib/matrix3.h \
+    lib/mesh.h \
+    lib/ncpwriter.h \
+    lib/polygon.h \
+    lib/polymod.h \
+    lib/print.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/surface.h \
+    lib/vector.h \
+    lib/vertex.h \
+
+
+lib/polygon.cpp : \
+    lib/axisbox.h \
+    lib/matrix3.h \
+    lib/polygon.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/vector.h \
+    lib/vertex.h \
+
+
+lib/polymod.cpp : \
+    lib/axisbox.h \
+    lib/matrix3.h \
+    lib/polygon.h \
+    lib/polymod.h \
+    lib/print.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/vector.h \
+    lib/vertex.h \
+
+
+lib/print.cpp : \
+    lib/print.h \
+
+
+lib/prmwriter.cpp : \
+    lib/axisbox.h \
+    lib/collapsedmesh.h \
+    lib/lookup.h \
+    lib/matrix3.h \
+    lib/mesh.h \
+    lib/polygon.h \
+    lib/polymod.h \
+    lib/print.h \
+    lib/prmwriter.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/surface.h \
+    lib/vector.h \
+    lib/vertex.h \
+
+
+lib/rvcolor.cpp : \
+    lib/print.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+
+
+lib/surface.cpp : \
+    lib/axisbox.h \
+    lib/lookup.h \
+    lib/matrix3.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/surface.h \
+    lib/vector.h \
+    lib/vertex.h \
+
+
+lib/vector.cpp : \
+    lib/rvbasetypes.h \
+    lib/vector.h \
+
+
+lib/vertex.cpp : \
+    lib/matrix3.h \
+    lib/rvbasetypes.h \
+    lib/vector.h \
+    lib/vertex.h \
+
+
+lib/world.cpp : \
+    lib/axisbox.h \
+    lib/collapsedmesh.h \
+    lib/lookup.h \
+    lib/matrix3.h \
+    lib/mesh.h \
+    lib/ncpwriter.h \
+    lib/polygon.h \
+    lib/polymod.h \
+    lib/print.h \
+    lib/prmwriter.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/surface.h \
+    lib/vector.h \
+    lib/vertex.h \
+    lib/world.h \
+    lib/wwriter.h \
+
+
+lib/wwriter.cpp : \
+    lib/axisbox.h \
+    lib/lookup.h \
+    lib/matrix3.h \
+    lib/mesh.h \
+    lib/polygon.h \
+    lib/polymod.h \
+    lib/print.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/surface.h \
+    lib/vector.h \
+    lib/vertex.h \
+    lib/wwriter.h \
+

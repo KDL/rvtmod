@@ -1,0 +1,204 @@
+
+ase2rv/appopts.cpp : \
+    lib/axisbox.h \
+    lib/helpfunc.h \
+    lib/matrix3.h \
+    lib/print.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/vector.h \
+    lib/vertex.h \
+    ase2rv/appopts.h \
+    ase2rv/aseprint.h \
+    ase2rv/namelist.h \
+
+
+ase2rv/ase2prm.cpp : \
+    lib/axisbox.h \
+    lib/helpfunc.h \
+    lib/lookup.h \
+    lib/matrix3.h \
+    lib/mesh.h \
+    lib/polygon.h \
+    lib/polymod.h \
+    lib/print.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/surface.h \
+    lib/vector.h \
+    lib/vertex.h \
+    lib/world.h \
+    ase2rv/appopts.h \
+    ase2rv/asefacevlist.h \
+    ase2rv/asematerial.h \
+    ase2rv/asemesh.h \
+    ase2rv/aseparser.h \
+    ase2rv/asevlist.h \
+    ase2rv/namelist.h \
+
+
+ase2rv/ase2taz.cpp : \
+    lib/axisbox.h \
+    lib/box.h \
+    lib/helpfunc.h \
+    lib/matrix3.h \
+    lib/print.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/vector.h \
+    lib/vertex.h \
+    ase2rv/appopts.h \
+    ase2rv/asefacevlist.h \
+    ase2rv/asemesh.h \
+    ase2rv/aseparser.h \
+    ase2rv/asevlist.h \
+    ase2rv/namelist.h \
+
+
+ase2rv/ase2vis.cpp : \
+    lib/axisbox.h \
+    lib/box.h \
+    lib/helpfunc.h \
+    lib/matrix3.h \
+    lib/print.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/vector.h \
+    lib/vertex.h \
+    ase2rv/appopts.h \
+    ase2rv/asefacevlist.h \
+    ase2rv/asemesh.h \
+    ase2rv/aseparser.h \
+    ase2rv/asevlist.h \
+
+
+ase2rv/ase2w.cpp : \
+    lib/axisbox.h \
+    lib/helpfunc.h \
+    lib/lookup.h \
+    lib/matrix3.h \
+    lib/mesh.h \
+    lib/polygon.h \
+    lib/polymod.h \
+    lib/print.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/surface.h \
+    lib/vector.h \
+    lib/vertex.h \
+    lib/world.h \
+    ase2rv/appopts.h \
+    ase2rv/asefacevlist.h \
+    ase2rv/asematerial.h \
+    ase2rv/asemesh.h \
+    ase2rv/aseparser.h \
+    ase2rv/asevlist.h \
+    ase2rv/namelist.h \
+
+
+ase2rv/asefacevlist.cpp : \
+    lib/axisbox.h \
+    lib/matrix3.h \
+    lib/print.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/vector.h \
+    lib/vertex.h \
+    ase2rv/asefacevlist.h \
+    ase2rv/asekeys.h \
+    ase2rv/aseparser.h \
+
+
+ase2rv/asekeys.cpp : \
+    ase2rv/asekeys.h \
+
+
+ase2rv/asematerial.cpp : \
+    lib/axisbox.h \
+    lib/helpfunc.h \
+    lib/matrix3.h \
+    lib/print.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/vector.h \
+    lib/vertex.h \
+    ase2rv/asekeys.h \
+    ase2rv/asematerial.h \
+    ase2rv/aseparser.h \
+
+
+ase2rv/asemesh.cpp : \
+    lib/axisbox.h \
+    lib/box.h \
+    lib/lookup.h \
+    lib/matrix3.h \
+    lib/mesh.h \
+    lib/polygon.h \
+    lib/polymod.h \
+    lib/print.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/surface.h \
+    lib/vector.h \
+    lib/vertex.h \
+    lib/world.h \
+    ase2rv/appopts.h \
+    ase2rv/asefacevlist.h \
+    ase2rv/asekeys.h \
+    ase2rv/asematerial.h \
+    ase2rv/asemesh.h \
+    ase2rv/aseparser.h \
+    ase2rv/aseprint.h \
+    ase2rv/asevlist.h \
+
+
+ase2rv/aseparser.cpp : \
+    lib/axisbox.h \
+    lib/matrix3.h \
+    lib/print.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/vector.h \
+    lib/vertex.h \
+    ase2rv/appopts.h \
+    ase2rv/asefacevlist.h \
+    ase2rv/asekeys.h \
+    ase2rv/asematerial.h \
+    ase2rv/asemesh.h \
+    ase2rv/aseparser.h \
+    ase2rv/aseprint.h \
+    ase2rv/asevlist.h \
+    ase2rv/namelist.h \
+
+
+ase2rv/aseprint.cpp : \
+    ase2rv/aseprint.h \
+
+
+ase2rv/asevlist.cpp : \
+    lib/axisbox.h \
+    lib/matrix3.h \
+    lib/print.h \
+    lib/rvbasetypes.h \
+    lib/rvcolor.h \
+    lib/rvtypes.h \
+    lib/vector.h \
+    lib/vertex.h \
+    ase2rv/asekeys.h \
+    ase2rv/aseparser.h \
+    ase2rv/asevlist.h \
+
+
+ase2rv/namelist.cpp : \
+    lib/print.h \
+    ase2rv/namelist.h \
+

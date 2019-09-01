@@ -1,0 +1,454 @@
+
+app\appopts.cpp : \
+    lib\axisbox.h \
+    lib\helpfunc.h \
+    lib\matrix3.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\vector.h \
+    lib\vertex.h \
+    app\appopts.h \
+    app\errdesc.h \
+
+
+app\colormod.cpp : \
+    lib\axisbox.h \
+    lib\matrix3.h \
+    lib\polygon.h \
+    lib\polymod.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\vector.h \
+    lib\vertex.h \
+    app\colormod.h \
+    app\parsedcolor.h \
+    app\parsedmod.h \
+    app\parser.h \
+
+
+app\errdesc.cpp : \
+    lib\axisbox.h \
+    lib\matrix3.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\vector.h \
+    lib\vertex.h \
+    app\appopts.h \
+    app\errdesc.h \
+
+
+app\findfile.cpp : \
+    lib\helpfunc.h \
+    lib\print.h \
+
+
+app\finf.cpp : \
+    lib\axisbox.h \
+    lib\helpfunc.h \
+    lib\lookup.h \
+    lib\matrix3.h \
+    lib\mesh.h \
+    lib\polygon.h \
+    lib\polymod.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\surface.h \
+    lib\vector.h \
+    lib\vertex.h \
+    lib\world.h \
+    app\appopts.h \
+    app\errdesc.h \
+    app\findfile.h \
+    app\finf.h \
+    app\modlist.h \
+    app\optkeep.h \
+    app\parsedmod.h \
+    app\parser.h \
+    app\readprm.h \
+
+
+app\fixbridge.cpp : \
+    lib\axisbox.h \
+    lib\lookup.h \
+    lib\matrix3.h \
+    lib\mesh.h \
+    lib\polygon.h \
+    lib\polymod.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\surface.h \
+    lib\vector.h \
+    lib\vertex.h \
+    app\errdesc.h \
+    app\fixbridge.h \
+    app\meshmod.h \
+    app\parser.h \
+
+
+app\fixpipe.cpp : \
+    lib\axisbox.h \
+    lib\lookup.h \
+    lib\matrix3.h \
+    lib\mesh.h \
+    lib\polygon.h \
+    lib\polymod.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\surface.h \
+    lib\vector.h \
+    lib\vertex.h \
+    app\errdesc.h \
+    app\fixpipe.h \
+    app\meshmod.h \
+    app\parser.h \
+
+
+app\input.cpp : \
+    lib\axisbox.h \
+    lib\helpfunc.h \
+    lib\lookup.h \
+    lib\matrix3.h \
+    lib\mesh.h \
+    lib\polygon.h \
+    lib\polymod.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\surface.h \
+    lib\vector.h \
+    lib\vertex.h \
+    lib\world.h \
+    app\appopts.h \
+    app\errdesc.h \
+    app\finf.h \
+    app\input.h \
+    app\keys.h \
+    app\meshmod.h \
+    app\modlist.h \
+    app\optkeep.h \
+    app\parsedmod.h \
+    app\parser.h \
+    app\wf.h \
+    app\wmodlist.h \
+
+
+app\legomod.cpp : \
+    lib\axisbox.h \
+    lib\lookup.h \
+    lib\matrix3.h \
+    lib\mesh.h \
+    lib\polygon.h \
+    lib\polymod.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\surface.h \
+    lib\vector.h \
+    lib\vertex.h \
+    app\legomod.h \
+    app\modlist.h \
+    app\optkeep.h \
+    app\parsedmod.h \
+    app\parser.h \
+
+
+app\main.cpp : \
+    lib\axisbox.h \
+    lib\lookup.h \
+    lib\matrix3.h \
+    lib\mesh.h \
+    lib\polygon.h \
+    lib\polymod.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\surface.h \
+    lib\vector.h \
+    lib\vertex.h \
+    lib\world.h \
+    app\appopts.h \
+    app\errdesc.h \
+    app\input.h \
+
+
+app\modlist.cpp : \
+    lib\axisbox.h \
+    lib\lookup.h \
+    lib\matrix3.h \
+    lib\mesh.h \
+    lib\polygon.h \
+    lib\polymod.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\surface.h \
+    lib\vector.h \
+    lib\vertex.h \
+    app\colormod.h \
+    app\errdesc.h \
+    app\keys.h \
+    app\legomod.h \
+    app\modlist.h \
+    app\optkeep.h \
+    app\parsedcolor.h \
+    app\parsedmod.h \
+    app\parser.h \
+    app\simplemods.h \
+    app\tazmod.h \
+    app\texdef.h \
+    app\texmap.h \
+    app\texwall.h \
+
+
+app\optkeep.cpp : \
+    lib\axisbox.h \
+    lib\lookup.h \
+    lib\matrix3.h \
+    lib\mesh.h \
+    lib\polygon.h \
+    lib\polymod.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\surface.h \
+    lib\vector.h \
+    lib\vertex.h \
+    app\errdesc.h \
+    app\modlist.h \
+    app\optkeep.h \
+    app\parsedmod.h \
+    app\parser.h \
+
+
+app\parsedcolor.cpp : \
+    lib\print.h \
+    app\errdesc.h \
+    app\parsedcolor.h \
+    app\parser.h \
+
+
+app\parsedmod.cpp : \
+    lib\axisbox.h \
+    lib\matrix3.h \
+    lib\polygon.h \
+    lib\polymod.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\vector.h \
+    lib\vertex.h \
+    app\parsedmod.h \
+    app\parser.h \
+
+
+app\parser.cpp : \
+    lib\print.h \
+    app\appopts.h \
+    app\errdesc.h \
+    app\parser.h \
+
+
+app\readprm.cpp : \
+    lib\axisbox.h \
+    lib\lookup.h \
+    lib\matrix3.h \
+    lib\mesh.h \
+    lib\polygon.h \
+    lib\polymod.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\surface.h \
+    lib\vector.h \
+    lib\vertex.h \
+    app\errdesc.h \
+    app\readprm.h \
+
+
+app\simplemods.cpp : \
+    lib\axisbox.h \
+    lib\matrix3.h \
+    lib\polygon.h \
+    lib\polymod.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\vector.h \
+    lib\vertex.h \
+    app\errdesc.h \
+    app\parsedcolor.h \
+    app\parsedmod.h \
+    app\parser.h \
+    app\simplemods.h \
+
+
+app\tazmod.cpp : \
+    lib\axisbox.h \
+    lib\helpfunc.h \
+    lib\lookup.h \
+    lib\matrix3.h \
+    lib\mesh.h \
+    lib\polygon.h \
+    lib\polymod.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\surface.h \
+    lib\vector.h \
+    lib\vertex.h \
+    app\errdesc.h \
+    app\keys.h \
+    app\modlist.h \
+    app\parsedmod.h \
+    app\parser.h \
+    app\tazmod.h \
+
+
+app\texdef.cpp : \
+    lib\axisbox.h \
+    lib\matrix3.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\vector.h \
+    lib\vertex.h \
+    app\errdesc.h \
+    app\parser.h \
+    app\texdef.h \
+
+
+app\texfloor.cpp : \
+    lib\axisbox.h \
+    lib\lookup.h \
+    lib\matrix3.h \
+    lib\mesh.h \
+    lib\polygon.h \
+    lib\polymod.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\surface.h \
+    lib\vector.h \
+    lib\vertex.h \
+    app\errdesc.h \
+    app\meshmod.h \
+    app\parser.h \
+    app\texdef.h \
+    app\texfloor.h \
+
+
+app\texmap.cpp : \
+    lib\axisbox.h \
+    lib\matrix3.h \
+    lib\polygon.h \
+    lib\polymod.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\vector.h \
+    lib\vertex.h \
+    app\errdesc.h \
+    app\keys.h \
+    app\parsedmod.h \
+    app\parser.h \
+    app\texdef.h \
+    app\texmap.h \
+
+
+app\texwall.cpp : \
+    lib\axisbox.h \
+    lib\lookup.h \
+    lib\matrix3.h \
+    lib\mesh.h \
+    lib\polygon.h \
+    lib\polymod.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\surface.h \
+    lib\vector.h \
+    lib\vertex.h \
+    app\errdesc.h \
+    app\parsedmod.h \
+    app\parser.h \
+    app\texdef.h \
+    app\texwall.h \
+
+
+app\wf.cpp : \
+    lib\axisbox.h \
+    lib\helpfunc.h \
+    lib\lookup.h \
+    lib\matrix3.h \
+    lib\mesh.h \
+    lib\polygon.h \
+    lib\polymod.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\surface.h \
+    lib\vector.h \
+    lib\vertex.h \
+    lib\world.h \
+    app\appopts.h \
+    app\errdesc.h \
+    app\meshmod.h \
+    app\modlist.h \
+    app\parsedmod.h \
+    app\parser.h \
+    app\wf.h \
+    app\wmodlist.h \
+
+
+app\wmodlist.cpp : \
+    lib\axisbox.h \
+    lib\lookup.h \
+    lib\matrix3.h \
+    lib\mesh.h \
+    lib\polygon.h \
+    lib\polymod.h \
+    lib\print.h \
+    lib\rvbasetypes.h \
+    lib\rvcolor.h \
+    lib\rvtypes.h \
+    lib\surface.h \
+    lib\vector.h \
+    lib\vertex.h \
+    app\errdesc.h \
+    app\fixbridge.h \
+    app\fixpipe.h \
+    app\keys.h \
+    app\meshmod.h \
+    app\modlist.h \
+    app\parsedmod.h \
+    app\parser.h \
+    app\texdef.h \
+    app\texfloor.h \
+    app\wmodlist.h \
+

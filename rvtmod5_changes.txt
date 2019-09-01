@@ -1,0 +1,100 @@
+
+Technical information on changes between rvtmod4 and rvtmod5.
+=============================================================
+
+This document is intended for tech-heads; those ones who are interested in
+technical details of implementation changes.
+
+The main difference between rvtmod4 and rvtmod5 are the new ASE tools ASE2TAZ
+and ASE2VIS. These tools are heavily based on the existing rvtmod library and
+existing ASE tools (ASE2W, ASE2PRM). In order to make the new tools, I had to
+make slight changes in the existing code both in the library and in the
+internals of the existing ASE tools.
+
+1. Library changes
+==================
+
+1.1 New stuff
+-------------
+
+A small number of new classes and methods are added; these support ASEMesh->
+Box conversion, and there are also some new linear algebra methods. These do
+not affect existing code.
+In rvglue there is a new modifier Mod_LowerColl, and a new option 'rot' for
+Mod_TexMap. These affect existing code only a tiny little.
+
+1.2 Fixes
+---------
+
+- Matrix_3x3::invert() was buggy; it panicked with "Attempt to invert
+non-invertable matrix" for some invertable matrixes also. Now inverting the
+matrix is replaced by the adjoint inversion method and should be OK.
+- prm creation centered the grip point of the collision (ncp) data on the
+instance, while leaving visual information (prm) untouched. This resulted
+in a mismatching prm/ncp. Now centering the instance is done in World (instead
+of PRMFileWriter), this ensures that the two kinds of data are synchronized.
+Centering is always done from rvglue; ase2prm has a new command line switch to
+control it.
+
+2. ASE tools changes
+====================
+
+2.1 Two-pass processing
+-----------------------
+
+rvtmod4 ASE tools do the conversion in one pass. The ASE file is read, and
+each mesh is processed and converted on-the-fly. The order of processing is:
+- material list is parsed and goes to global variables.
+- ASE meshes are parsed (->ASEMesh), and converted (->Mesh). Conversion to
+  Mesh involves sanity checking.
+- w/prm and intermediate files are written.
+- collision info is generated and ncp is written.
+
+ASE2TAZ and ASE2VIS does not need materials at all; they also don't need the
+sanity checking which is required for building worlds and prms (e.g. a mesh
+which is used for creating a Track Zone need not have faces or edges).
+Therefore, parsing the ASE and converting the parsed information is
+separated in rvtmod5. If you watch the output produced by the ASE tools, you
+will see the difference.
+
+The order of processing in rvtmod5/ASE2W and rvtmod5/ASE2PRM:
+- material list is parsed (in ASE2w and ASE2PRM). Instead global variables,
+  this now goes to a new class (MaterialList).
+- all ASE meshes are parsed (->ASEMesh). This also goes to a new class
+  (ASEMeshList).
+- all ASE meshes are converted (->Mesh). This involves sanity checking.
+- w/prm and intermediate files are written.
+- collision info is generated and ncp is written.
+
+The order of processing in rvtmod5/ASE2TAZ and ASE2VIS:
+- material list, if any, is skipped.
+- all ASE meshes are parsed (->ASEMesh, ASEMeshList).
+- all ASE meshes are converted into boxes (->Box, BoxList). Only the vertex
+  information is used. This means that there is no "Mesh-style" sanity check;
+  the only thing that must be satisified is that the ASE mesh must really be a
+  box (8 vertices, all parallel/perpendicular). For Viziboxes, boxes are also
+  checked to be axis-aligned.
+- The listfile is read, processed and output is written.
+
+As for ASE2W and ASE2PRM, this change did not make any good; they do the same
+thing but need a little bit more memory (since all parsed stuff is kept
+in memory until everything is converted). The difference is insignificant,
+though; we don't measure memory in kilobytes nowadays.
+
+2.2 Command-line option processing
+----------------------------------
+
+Processing the command line options is now different; this is mainly to
+accomodate the new switches (-o, -q) and listfile stuff (incl. -f). Also,
+if object list is given in command line, this now goes to a class (NameList)
+instead of a global variable.
+Out of pure lazyness, processing and storing command-line options is a common
+code (despite the fact that different ASE tools have some different options).
+
+-------------------------------------------------------------------------------
+Hopefully I did not screw up any existing functionality or introduced new bugs.
+If you find that ASE2W or ASE2PRM from rvtmod5 cannot do something which
+the same tools from rvtmod4 could, please let me know.
+
+Gabor Varga
+bootes@freemail.hu
